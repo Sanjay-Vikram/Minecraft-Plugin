@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    jcenter()
+    maven {
+        url "https://hub.spigotmc.org/nexus/content/repositories/public/"
+    }
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+
+    implementation 'org.spigotmc:spigot-api:1.18.1-R0.1-SNAPSHOT'
+}
+
+application {
+    mainClass = 'com.github.myusername.Plugin'
+}
